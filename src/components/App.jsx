@@ -6,8 +6,8 @@ function App() {
   const [items, setItems] = useState([]);
 
   function addItem(inputText) {
-    setItems((prevItems) => {
-      return [...prevItems, inputText];
+    setItems((prvItems) => {
+      return [...prvItems, inputText];
     });
   }
 
@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="container">
       <div className="heading">
-        <h1>To-Do List</h1>
+        <h1>To Do for you</h1>
       </div>
       <InputArea onAdd={addItem} />
       <div>
